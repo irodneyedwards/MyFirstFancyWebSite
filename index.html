@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
 <title>My First Fancy WebSite</title>
-<script src="script.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body style="background-color: red;">
+<body>
 <h1>Hello World!</h1>
 <input type="color" id="colorPicker"><br>
-<script>
-  document.getElementById('colorPicker').addEventListener('input', function() {
-    document.body.style.backgroundColor = this.value;
-  });
-</script>
+<div class="grid grid-cols-3 gap-4">
+  <div class="card border border-gray-300 p-4">
+    <img src="https://source.unsplash.com/random" alt="Placeholder image">
+    <p>Text for card 1.</p>
+</div>
+</div>
 </body>
 </html>
